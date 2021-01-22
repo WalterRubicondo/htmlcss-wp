@@ -2,30 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Tahoma;
 }
 
 body {
   padding: 1em 0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.row {
-  margin: 0 -15px;
-}
-
-div.row:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class^=cln-] {
-  float: left;
-  padding: 0 15px;
 }
 
 /* Utilities */
@@ -41,21 +22,30 @@ div.row:after {
   width: 50%;
 }
 
-.mt-1 {
-  margin-top: 1em;
+.text {
+  color: rgb(161, 161, 161);
 }
 
-.text {
-  color: rgb(133, 133, 133);
-}
 /* Utilities */
 
-.nav {
-  font-size: 10px;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-span {
-  margin-right: 5px;
+.row {
+  margin: 1em -15px;
+}
+
+div.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class^=cln-] {
+  float: left;
+  padding: 0 15px;
 }
 
 .logo {
@@ -63,9 +53,49 @@ span {
   margin-bottom: 15px;
 }
 
+.nav {
+  font-size: 10px;
+}
+
+div.nav > span {
+  margin-right: 5px;
+}
+
 .bg-jumbo {
   height: 400px;
   background: url("../img/banner.jpg") no-repeat;
-  background-size: cover;
-  border-radius: 5px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+}
+
+.jumbo-text {
+  width: 50%;
+  padding-top: 250px;
+  padding-left: 60px;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+.pic {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+h4 {
+  margin: 4px 0;
+  font-weight: lighter;
+}
+
+.heart:after {
+  content: ' \2665';
+  color: rgb(255, 0, 0);
+}
+
+.heart {
+  text-align: center;
+  display: block;
 }
