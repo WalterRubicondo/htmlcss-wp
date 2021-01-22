@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+div.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class^=cln-] {
+  float: left;
+  padding: 0 15px;
+}
+
+/* Utilities */
+.cln-100 {
+  width: 100%;
+}
+
+.cln-25 {
+  width: 25%;
+}
+
+.cln-50 {
+  width: 50%;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.text {
+  color: rgb(133, 133, 133);
+}
+/* Utilities */
+
+.nav {
+  font-size: 10px;
+}
+
+span {
+  margin-right: 5px;
+}
+
+.logo {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.bg-jumbo {
+  height: 400px;
+  background: url("../img/banner.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
